@@ -3,22 +3,23 @@ class Products {
     let htmlCatalog = "";
 
     CATALOG.forEach(({ id, name, price, img }) => {
-      console.log(img)
       htmlCatalog += `
-        <li>
-          <span>${name}</span>
+        <li class="products-element">
+        <span class="products-element__name">${name}</span>
 
-          <img src="${img}" />
+        <img class="products-element__img" src="${img}" />
 
-          <span>${price}</span>
+        <span class="products-element__price">
+        ⚡️ ${price.toLocaleString()} USD
+        </span>
 
-          <button>Добавить в корзину</button>
+        <button class="products-element__btn">Добавить в корзину</button>
         </li>
       `;
     });
-    
+
     const html = `
-      <ul>
+      <ul class="products-container">
         ${htmlCatalog}
       </ul>
     `;
