@@ -13,10 +13,24 @@
   --color-medium: #e8e8e8;
   --color-unaccent: #808080;
   --color-white: #ffffff;
+  --color-dark: #a1a1a1;
 
   --spacing-large: 30px;
   --spacing-medium: 15px;
   --spacing-small: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-white);
 }
 
 * {
