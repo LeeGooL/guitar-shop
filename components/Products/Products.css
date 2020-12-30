@@ -1,6 +1,5 @@
 .products-container {
   display: grid;
-  width: 80%;
   max-width: 1200px;
   margin: var(--spacing-large) auto;
 
