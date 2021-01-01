@@ -35,7 +35,7 @@ class Shopping {
         </table>
       </div>
     `;
-    
+
     ROOT_SHOPPING.innerHTML = html;
   }
 }
