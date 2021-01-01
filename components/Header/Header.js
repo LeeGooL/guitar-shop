@@ -15,5 +15,3 @@ class Header {
 }
 
 const headerPage = new Header();
-
-const productsStore = localStorageUtil.getProducts();
