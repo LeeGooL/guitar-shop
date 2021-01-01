@@ -13,12 +13,10 @@ fetch("server/catalog.json")
   .then((res) => res.json())
   .then((body) => {
     CATALOG = body;
-    
-    setTimeout(() => {
-      spinnerPage.handleClear();
-      render();
-    }, 2000);
+    spinnerPage.handleClear();
+    render();
   })
   .catch((error) => {
-    console.log(error);
+    spinnerPage.handleClear();
+    errorPage.render();
   });
